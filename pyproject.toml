@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "myoquant-sdh-train"
+version = "0.1.0"
+description = ""
+authors = ["Corentin"]
+readme = "README.md"
+packages = [{include = "myoquant_sdh_train"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <=3.11"
+confection = "^0.0.4"
+typer = "^0.7.0"
+rich = "^13.0.1"
+scikit-learn = "^1.2.0"
+matplotlib = "^3.6.3"
+pandas = "^1.5.2"
+dvc = "^2.41.1"
+tensorboard = "^2.11.0"
+embetter = "^0.3.0"
+doubtlab = "^0.2.4"
+ipykernel = "^6.20.1"
+tensorflow = "^2.11.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+mypy = "^0.991"
+black = "^22.12.0"
+ruff = "^0.0.219"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
